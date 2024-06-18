@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+}
+body{
+    background-color:blue;
+}
+.board,.boardInfo{
+    max-width: 500px;
+}
+.board{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+}
+.boardInfo{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 25px;
+}
+.boton{
+    cursor: pointer;
+    color: white;
+    background-color: #f35a69;
+    font-size: 25px;
+    padding: 10px;
+}
+.perdiste{
+    display: none;
+}
+.square{
+    aspect-ratio: 1;
+}
+.emptySquare{
+    background-color: #456990;
+}
+.snakeSquare{
+    background-color: #ccf47f;
+}
+.foodSquare{
+    background-color: #f35a69;
+}
